@@ -1,0 +1,9 @@
+insrance prediction fastapi curl command- linux
+curl -X POST http://localhost:8000/predict -H "Content-Type: application/json" -d '{"age":35,"sex":"female","bmi":27.5,"children":2,"smoker":"no","region":"southwest"}'
+---
+powershell
+curl -Method POST "http://localhost:8000/predict" -Headers @{ "Content-Type"="application/json" } -Body '{"age":35,"sex":"female","bmi":27.5,"children":2,"smoker":"no","region":"southwest"}'
+---
+streamlit streamlit run app.py
+fastapi uvicorn main:app --reload
+fastapi 127.0.0.1:8000/docs
